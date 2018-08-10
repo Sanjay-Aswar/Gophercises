@@ -5,9 +5,9 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/Sanjay-Aswar/Gophercises/task/cmd"
+	"github.com/Sanjay-Aswar/Gophercises/task/db"
 	"github.com/mitchellh/go-homedir"
-	"github.ibm.com/sanjay.aswar1/gophercises/task/cmd"
-	"github.ibm.com/sanjay.aswar1/gophercises/task/db"
 )
 
 func main() {

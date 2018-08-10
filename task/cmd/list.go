@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/Sanjay-Aswar/Gophercises/task/db"
 	"github.com/spf13/cobra"
-	"github.ibm.com/sanjay.aswar1/gophercises/task/db"
 )
 
 var listCmd = &cobra.Command{
@@ -23,7 +23,7 @@ var listCmd = &cobra.Command{
 		}
 		fmt.Println("You have following tasks to complete.")
 		for i, task := range tasks {
-			fmt.Printf("%d\t%v", i, task)
+			fmt.Printf("%d. %v\n", i+1, task.Value)
 		}
 	},
 }
